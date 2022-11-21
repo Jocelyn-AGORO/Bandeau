@@ -2,9 +2,6 @@ package exemple;
 
 import bandeau.Bandeau;
 
-import java.util.
-
-
 public class Pendu extends Effet {
 
     private String messageTemplate(Bandeau bandeau){
