@@ -8,7 +8,17 @@ import java.awt.Font;
 public class ExempleDUtilisation {
 
     public static void main(String[] args) {
-        new ExempleDUtilisation().exemple();
+        new ExempleDUtilisation().myExemple();
+    }
+
+    public void myExemple() {
+        Bandeau monBandeau = new Bandeau();
+        monBandeau.setMessage("Othmane dzb");
+        Scenario scenario = new Scenario();
+        scenario.addEffect(new Clignotant(), 2);
+        scenario.addEffect(new Zoom(), 2);
+        scenario.addEffect(new Rotation(), 3);
+        scenario.start(monBandeau);
     }
 
     public void exemple() {
